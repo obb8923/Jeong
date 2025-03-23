@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react'; 제거
 import styles from './Products.module.css';
 
 const Products = () => {
