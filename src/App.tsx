@@ -2,21 +2,21 @@
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Products from './pages/Products';
+import ToyDo from './pages/ToyDo';
+import Readin from './pages/readin';
 import Nav from './components/Nav';
-
+import TermsAndPolicy from './pages/terms-and-policy';
 function App() {
   return (
     <Router>
-      <div>
+      <div style={{ width: '100%', height: '100%' }}>
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/ToyDo" element={<ToyDo />} />
+          <Route path="/readin" element={<Readin />} />
+          <Route path="/ToyDo/terms-and-policy" element={<TermsAndPolicy />} />
+          <Route path="/readin/terms-and-policy" element={<TermsAndPolicy />} />
         </Routes>
       </div>
     </Router>

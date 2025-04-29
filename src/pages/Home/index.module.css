@@ -1,0 +1,78 @@
+.container {
+  margin: 0;
+  padding-top: 4rem;
+  background-image: url('/jpg/forest.jpg'); /* 배경 이미지 경로 */
+  background-size: 110%; /* 배경 이미지 크기 조정 (확대) */
+  background-position: center; /* 배경 이미지 위치 */
+  background-repeat: no-repeat; /* 배경 이미지 반복 없음 */
+  color: white; /* 텍스트 색상을 흰색으로 변경 (배경과 대비되도록) */
+  width: 100%;
+  height: 100%;
+  animation: panBackground 120s linear infinite; /* 패닝 애니메이션 적용 (지속 시간 변경) */
+}
+
+.gridContainer { /* 새로운 그리드 컨테이너 스타일 */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3개의 열로 구성 */
+  gap: 20px; /* 카드 사이 간격 */
+  padding: 20px; /* 컨테이너 내부 여백 */
+  width: 100%; /* 너비를 부모에 맞춤 */
+  box-sizing: border-box; /* 패딩 포함 너비 계산 */
+  justify-items: center; /* 카드들을 그리드 셀 중앙에 배치 */
+}
+
+@keyframes panBackground {
+  0% {
+    background-position: 0% center; /* 왼쪽에서 시작 */
+  }
+  50% {
+    background-position: 100% center; /* 오른쪽으로 이동 */
+  }
+  100% {
+    background-position: 0% center; /* 다시 왼쪽으로 이동 */
+  }
+} 
+
+
+.card {
+  /* Glassmorphism 스타일 */
+  background: rgba(255, 255, 255, 0.2); /* 반투명 흰색 배경 */
+  backdrop-filter: blur(10px); /* 배경 블러 효과 */
+  -webkit-backdrop-filter: blur(10px); /* Safari 호환성 */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* 약간 밝은 테두리 */
+
+  /* 기존 스타일 유지 */
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 가로 중앙 정렬 */
+  justify-content: center; /* 세로 중앙 정렬 추가 */
+  padding: 1rem; /* 패딩 감소 */
+
+  /* 크기 조정 */
+  width: 100%; /* 셀 너비에 맞추되, max-width로 제한 */
+  max-width: 200px; /* 최대 너비 설정 (크기 절반 효과) */
+  aspect-ratio: 1 / 1; /* 정사각형 유지 */
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.productName {
+  font-size: 1.5rem;
+  color: #fafafa;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.productImage {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 16px;
+}

@@ -1,11 +1,23 @@
-// import React from 'react'; 제거
-import styles from './Home.module.css';
-
+import styles from './index.module.css';
+import useHomeModeStore from '../../store/HomeModeStore';
+import { products } from '../../constants';
 const Home = () => {
+  const { currentMode} = useHomeModeStore();
+  const handleClick = ( link: string) => {
+    window.open(link, '_blank');
+  };
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>홈페이지</h1>
-      <p className={styles.description}>환영합니다!</p>
+     {currentMode === 'products' && (
+       <div className={styles.gridContainer}>
+         {products.map(product => (
+            <div key={product.id} className={styles.card} onClick={() => handleClick(product.link)}>
+                <img src={product.icon_url} alt={product.name} className={styles.productImage} />
+                <h2 className={styles.productName}>{product.name}</h2>
+            </div>
+          ))}
+       </div>
+     )}
     </div>
   );
 };
