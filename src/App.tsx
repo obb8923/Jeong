@@ -6,6 +6,8 @@ import ToyDo from './pages/ToyDo';
 import Readin from './pages/readin';
 import Nav from './components/Nav';
 import TermsAndPolicy from './pages/terms-and-policy';
+import AuthVerify from './pages/AuthVerify';
+import Auth from './pages/Auth';
 function App() {
   return (
     <Router>
@@ -17,6 +19,8 @@ function App() {
           <Route path="/readin" element={<Readin />} />
           <Route path="/ToyDo/terms-and-policy" element={<TermsAndPolicy />} />
           <Route path="/readin/terms-and-policy" element={<TermsAndPolicy />} />
+          <Route path="/auth/verify" element={<AuthVerify />} />
+          <Route path="/auth" element={<Auth />} />
         </Routes>
       </div>
     </Router>
