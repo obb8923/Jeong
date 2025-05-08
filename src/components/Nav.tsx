@@ -22,7 +22,10 @@ const Nav = () => {
           <li><Link to="/ToyDo/terms-and-policy">약관 및 정책</Link></li>
         )}
         {basePath === '/readin' && (
-          <li><Link to="/readin/terms-and-policy">약관 및 정책</Link></li>
+          <>
+            <li><Link to="/readin/terms-and-policy">약관 및 정책</Link></li>
+            <li><Link to="/readin/user/delete">회원 탈퇴</Link></li>
+          </>
         )}
       </ul>
     </nav>
