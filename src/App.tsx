@@ -21,7 +21,7 @@ function App() {
           <Route path="/readin" element={<Readin />} />
           <Route path="/pio" element={<Pio />} />
           <Route path="/pio/terms-and-policy" element={<TermsAndPolicy />} />
-
+          <Route path="/pio/user/delete" element={<Delete />} />
           <Route path="/ToyDo/terms-and-policy" element={<TermsAndPolicy />} />
           <Route path="/readin/terms-and-policy" element={<TermsAndPolicy />} />
           <Route path="/auth/verify" element={<AuthVerify />} />

@@ -30,6 +30,7 @@ const Nav = () => {
         {basePath === '/pio' && (
           <>
             <li><Link to="/pio/terms-and-policy">약관 및 정책</Link></li>
+            <li><Link to="/pio/user/delete">회원 탈퇴</Link></li>
           </>
         )}
       </ul>
