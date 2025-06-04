@@ -9,6 +9,7 @@ import TermsAndPolicy from './pages/terms-and-policy';
 import AuthVerify from './pages/AuthVerify';
 import Auth from './pages/Auth';
 import Delete from './pages/User/Delete';
+import Pio from './pages/pio';
 function App() {
   return (
     <Router>
@@ -18,6 +19,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/ToyDo" element={<ToyDo />} />
           <Route path="/readin" element={<Readin />} />
+          <Route path="/pio" element={<Pio />} />
+          <Route path="/pio/terms-and-policy" element={<TermsAndPolicy />} />
+
           <Route path="/ToyDo/terms-and-policy" element={<TermsAndPolicy />} />
           <Route path="/readin/terms-and-policy" element={<TermsAndPolicy />} />
           <Route path="/auth/verify" element={<AuthVerify />} />
