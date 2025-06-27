@@ -33,6 +33,11 @@ const Nav = () => {
             <li><Link to="/pio/user/delete">회원 탈퇴</Link></li>
           </>
         )}
+         {basePath === '/layered' && (
+          <>
+            <li><Link to="/layered/terms-and-policy">약관 및 정책</Link></li>
+          </>
+        )}
       </ul>
     </nav>
   );

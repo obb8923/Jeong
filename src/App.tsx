@@ -10,6 +10,7 @@ import AuthVerify from './pages/AuthVerify';
 import Auth from './pages/Auth';
 import Delete from './pages/User/Delete';
 import Pio from './pages/pio';
+import Layered from './pages/layered'
 function App() {
   return (
     <Router>
@@ -19,14 +20,17 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/ToyDo" element={<ToyDo />} />
           <Route path="/readin" element={<Readin />} />
+          <Route path="/readin/terms-and-policy" element={<TermsAndPolicy />} />
+          <Route path="/readin/user/delete" element={<Delete />} />
           <Route path="/pio" element={<Pio />} />
           <Route path="/pio/terms-and-policy" element={<TermsAndPolicy />} />
           <Route path="/pio/user/delete" element={<Delete />} />
           <Route path="/ToyDo/terms-and-policy" element={<TermsAndPolicy />} />
-          <Route path="/readin/terms-and-policy" element={<TermsAndPolicy />} />
+          <Route path="/layered" element={<Layered />} />
+          <Route path="/layered/terms-and-policy" element={<TermsAndPolicy />} />
+
           <Route path="/auth/verify" element={<AuthVerify />} />
           <Route path="/auth" element={<Auth />} />
-          <Route path="/readin/user/delete" element={<Delete />} />
         </Routes>
       </div>
     </Router>
