@@ -28,7 +28,7 @@ function App() {
           <Route path="/ToyDo/terms-and-policy" element={<TermsAndPolicy />} />
           <Route path="/layered" element={<Layered />} />
           <Route path="/layered/terms-and-policy" element={<TermsAndPolicy />} />
-
+          
           <Route path="/auth/verify" element={<AuthVerify />} />
           <Route path="/auth" element={<Auth />} />
         </Routes>
