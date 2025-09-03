@@ -48,6 +48,11 @@ const Nav = () => {
             <li><Link to="/layered/terms-and-policy">약관 및 정책</Link></li>
           </>
         )}
+        {basePath === '/HanaDiary' && (
+          <>
+            <li><Link to="/HanaDiary/terms-and-policy">약관 및 정책</Link></li>
+          </>
+        )}
       </ul>
     </nav>
   );

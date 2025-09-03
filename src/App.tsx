@@ -11,6 +11,7 @@ import Auth from './pages/Auth';
 import Delete from './pages/User/Delete';
 import Pio from './pages/pio';
 import Layered from './pages/layered'
+import HanaDiary from './pages/HanaDiary'
 function App() {
   return (
     <Router>
@@ -28,7 +29,8 @@ function App() {
           <Route path="/ToyDo/terms-and-policy" element={<TermsAndPolicy />} />
           <Route path="/layered" element={<Layered />} />
           <Route path="/layered/terms-and-policy" element={<TermsAndPolicy />} />
-          
+          <Route path="/HanaDiary" element={<HanaDiary />} />
+          <Route path="/HanaDiary/terms-and-policy" element={<TermsAndPolicy />} />
           <Route path="/auth/verify" element={<AuthVerify />} />
           <Route path="/auth" element={<Auth />} />
         </Routes>
