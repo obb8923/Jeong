@@ -50,6 +50,16 @@ const Nav = () => {
         )}
         {basePath === '/HanaDiary' && (
           <>
+            <li>
+              <a href="mailto:companyjeong25@gmail.com?subject=문의하기" target="_blank" rel="noopener noreferrer">
+                문의하기
+              </a>
+            </li>
+            <li>
+              <a href="https://docs.google.com/forms/d/1UwFIDg3nLWFeGyZTOcXMOe4Nvoy5z6NtjOu3rtB8RLc/edit" target="_blank" rel="noopener noreferrer">
+                건의하기
+              </a>
+            </li>
             <li><Link to="/HanaDiary/terms-and-policy">약관 및 정책</Link></li>
           </>
         )}
