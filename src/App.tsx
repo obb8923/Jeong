@@ -1,5 +1,3 @@
-// import './App.css'
-
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import ToyDo from './pages/ToyDo';
@@ -12,6 +10,7 @@ import Delete from './pages/User/Delete';
 import Pio from './pages/pio';
 import Layered from './pages/layered'
 import HanaDiary from './pages/HanaDiary'
+import Daydot from './pages/Daydot'
 function App() {
   return (
     <Router>
@@ -33,6 +32,8 @@ function App() {
           <Route path="/HanaDiary/terms-and-policy" element={<TermsAndPolicy />} />
           <Route path="/auth/verify" element={<AuthVerify />} />
           <Route path="/auth" element={<Auth />} />
+          <Route path="/daydot" element={<Daydot />} />
+          <Route path="/daydot/terms-and-policy" element={<TermsAndPolicy />} />
         </Routes>
       </div>
     </Router>

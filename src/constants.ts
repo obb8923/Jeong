@@ -34,6 +34,12 @@ export const products = [
     name: '하나일기',
     icon_url: '/png/HanaDiary_logo.png',
     link: '/HanaDiary',
+  },
+  {
+    id: 7,
+    name: 'daydot',
+    icon_url: '/png/daydot_logo.png',
+    link: '/daydot',
   }
   ];
 
@@ -55,6 +61,9 @@ export const products = [
     },
     '/HanaDiary':{
       'logo':'하나일기',
+    },
+    '/daydot':{
+      'logo':'daydot',
     }
   }
   export const AI_MODEL = 'Gemini 2.0 Flash';
@@ -311,6 +320,12 @@ jeong      `]
 개발자: 박정빈
 
 이메일: companyjeong25@gmail.com
+      `],
+    },
+    '/daydot':{
+      'title':['개인정보처리방침'],
+      'content':[`
+        
       `],
     }
   }
