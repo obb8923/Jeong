@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { createClient } from '@supabase/supabase-js';
-import styles from './UserDelete.module.css';
 
 const supabaseUrl = 'https://bcurkqacgacpwybrtcsg.supabase.co';
 const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJjdXJrcWFjZ2FjcHd5YnJ0Y3NnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDM0ODgxMjksImV4cCI6MjA1OTA2NDEyOX0.t7h5NNhajDPcIL7Ry2DG7jxDTDXqQ-r0mUB3eL3mXqE';
@@ -45,12 +44,12 @@ const UserDelete = () => {
   };
 
   return (
-    <div className={styles.container}>
-      <form className={styles.formContainer} onSubmit={handleSubmit}>
+    <div className="m-0 pt-16 bg-gradient-to-b from-black/50 to-black/50 bg-[url('/jpg/forest.jpg')] bg-[length:110%] bg-center bg-no-repeat text-white w-full h-full animate-pan overflow-y-auto">
+      <form className="flex flex-col items-center p-8" onSubmit={handleSubmit}>
         <input
           type="email"
           placeholder="이메일"
-          className={styles.inputField}
+          className="mb-4 p-2 rounded-md border border-[#ccc] w-[300px]"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
@@ -58,13 +57,18 @@ const UserDelete = () => {
         <input
           type="password"
           placeholder="비밀번호"
-          className={styles.inputField}
+          className="mb-4 p-2 rounded-md border border-[#ccc] w-[300px]"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button type="submit" className={styles.submitButton}>탈퇴</button>
-        {message && <p className={styles.message}>{message}</p>}
+        <button 
+          type="submit" 
+          className="py-3 px-6 rounded-md border-none bg-[#007bff] text-white cursor-pointer w-[318px] hover:bg-[#0056b3]"
+        >
+          탈퇴
+        </button>
+        {message && <p className="mt-4 text-white">{message}</p>}
       </form>
     </div>
   );

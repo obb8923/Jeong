@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import styles from './AuthVerify.module.css';
 
 interface LocationState {
   error?: string;
@@ -39,14 +38,14 @@ const AuthVerify = () => {
   }, [location.state]);
 
   const getMessageClassName = () => {
-    if (messageType === 'success') return `${styles.message} ${styles.success}`;
-    if (messageType === 'error') return `${styles.message} ${styles.error}`;
-    return `${styles.message} ${styles.info}`;
+    if (messageType === 'success') return 'text-xl text-[#555] p-4 rounded-md w-auto box-border bg-[#e6ffed] border border-[#b7ebc9] text-[#257942]';
+    if (messageType === 'error') return 'text-xl text-[#555] p-4 rounded-md w-auto box-border bg-[#ffeeee] border border-[#fcc2c3] text-[#a82a2a]';
+    return 'text-xl text-[#555] p-4 rounded-md w-auto box-border bg-[#eef6fc] border border-[#c2dcf2] text-[#2a67a8]';
   };
 
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>인증 확인</h1>
+    <div className="m-0 pt-16 px-8 bg-gradient-to-b from-black/50 to-black/50 bg-[url('/jpg/forest.jpg')] bg-[length:110%] bg-center bg-no-repeat text-white w-full h-full animate-pan overflow-y-auto">
+      <h1 className="text-3xl mb-5 text-white">인증 확인</h1>
       {message && <p className={getMessageClassName()}>{message}</p>}
     </div>
   );
