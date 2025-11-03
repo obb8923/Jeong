@@ -1,0 +1,28 @@
+.container {
+  margin: 0;
+  padding-top: 4rem;
+  background-image: url('/jpg/forest.jpg');
+  background-size: 110%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  width: 100%;
+  height: 100%;
+  animation: panBackground 120s linear infinite;
+  overflow-y: auto;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.content {
+  white-space: pre-line;
+  padding: 0 2rem 2rem;
+  line-height: 1.6;
+}
+
