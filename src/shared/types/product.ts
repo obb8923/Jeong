@@ -24,7 +24,8 @@ export type NavKey =
   | '/pio' 
   | '/layered' 
   | '/HanaDiary' 
-  | '/daydot';
+  | '/daydot'
+  | '/FocusOven';
 
 export interface TermsAndPolicy {
   title: string[];

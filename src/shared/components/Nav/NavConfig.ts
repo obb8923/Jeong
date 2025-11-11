@@ -99,6 +99,16 @@ export const navConfigs: Record<NavKey, NavConfig> = {
         to: '/daydot/terms-and-policy'
       }
     ]
+  },
+  '/FocusOven': {
+    logo: 'FocusOven',
+    menu: [
+      {
+        type: 'link',
+        text: '약관 및 정책',
+        to: '/FocusOven/terms-and-policy'
+      }
+    ]
   }
 };
 

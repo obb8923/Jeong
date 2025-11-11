@@ -6,6 +6,7 @@ import PioPage from '../domains/pio/pages';
 import LayeredPage from '../domains/layered/pages';
 import HanaDiaryPage from '../domains/hana-diary/pages';
 import DaydotPage from '../domains/daydot/pages';
+import FocusOvenPage from '../domains/focusoven/pages';
 import Auth from '../shared/pages/Auth';
 import AuthVerify from '../shared/pages/AuthVerify';
 import TermsAndPolicy from '../shared/pages/TermsAndPolicy';
@@ -32,6 +33,8 @@ export const routes: RouteConfig[] = [
   { path: '/HanaDiary/terms-and-policy', element: TermsAndPolicy },
   { path: '/daydot', element: DaydotPage },
   { path: '/daydot/terms-and-policy', element: TermsAndPolicy },
+  { path: '/FocusOven', element: FocusOvenPage },
+  { path: '/FocusOven/terms-and-policy', element: TermsAndPolicy },
   { path: '/auth', element: Auth },
   { path: '/auth/verify', element: AuthVerify },
 ];
